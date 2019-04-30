@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="total" parallel="tests"  thread-count="6">
+  <test name="Test">
+    <classes>
+      <class name="testCC.CCOne"/>
+      
+       </classes>
+  </test> 
+      
+      <test parallel="classes" thread-count="5" name="Test">
+    <classes>
+      <class name="testEE.EEOne"> 
+      </class>
+       </classes>
+  </test> <!-- Test -->
+   <test name="ok">
+       <classes>
+    <class name="testAA.One">
+    
+        </class>
+       </classes>
+  </test> <!-- Test -->
+      
+      
+         <test parallel="classes" thread-count="5" name="Test">
+    <classes>
+      <class name="testEE.EEOne"> 
+      <class name="t"/>
+      
+      
+      <class name="testFF.FFF"/>
+    
+      <class name="testAA.Two"/>
+      <class name="testBB.BBOne"/>
+      <class name="testAA.Three"/>
+      <class name="testEE.EEE"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

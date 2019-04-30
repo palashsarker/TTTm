@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [firstTest]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.ups.com/us/en/Home.page"/>
+  <listeners>
+    <listener class-name="testDD.Listener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.ups.com/us/en/Home.page"/>
+    <classes>
+      <class name="testDD.SeleniumOne">
+        <methods>
+          <include name="info" invocation-numbers="0 1"/>
+          <include name="close"/>
+          <include name="photoforme"/>
+          <include name="initial"/>
+        </methods>
+      </class> <!-- testDD.SeleniumOne -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [firstTest] -->

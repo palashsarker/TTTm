@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Failed suite [SuiteOne]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="testAA.One">
+        <methods>
+          <include name="soft"/>
+        </methods>
+      </class> <!-- testAA.One -->
+      <class name="testDD.SeleniumOne">
+        <methods>
+          <include name="info"/>
+          <include name="photoforme"/>
+        </methods>
+      </class> <!-- testDD.SeleniumOne -->
+      <class name="testDD.SeleniumOneFactory">
+        <methods>
+          <include name="photoforme"/>
+          <include name="initial"/>
+          <include name="close"/>
+          <include name="info" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testDD.SeleniumOneFactory -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SuiteOne] -->

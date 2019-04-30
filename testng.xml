@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+   <groups>
+   <run>
+   <include name="smoke"/>
+    <include name="good"/>
+   </run>
+   </groups>
+  
+    <classes>
+      <class name="testCC.CCOne"/>
+      <class name="testAA.One"/>
+      <class name="testAA.Two"/>
+      <class name="testBB.BBOne"/>
+      <class name="testAA.Three"/>
+    </classes>
+   
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

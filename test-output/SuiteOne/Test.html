@@ -1,0 +1,456 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/5/2</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 24 13:59:58 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22777 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDD.SeleniumOne.initial()'><b>initial</b><br>Test class: testDD.SeleniumOne</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by @Configuration on method initial but has not been marked @Optional or defined
+in C:\Users\palsa\eclipse-workspace\project\TestImp\testngfac.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040325744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040325744'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by @Configuration on method initial but has not been marked @Optional or defined
+in C:\Users\palsa\eclipse-workspace\project\TestImp\testngfac.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDD.SeleniumOne.initial()'><b>initial</b><br>Test class: testDD.SeleniumOne</td>
+<td></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+<tr>
+<td title='testDD.SeleniumOne.close()'><b>close</b><br>Test class: testDD.SeleniumOne</td>
+<td></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+<tr>
+<td title='testDD.SeleniumOne.close()'><b>close</b><br>Test class: testDD.SeleniumOne</td>
+<td></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDD.SeleniumOneFactory.info()'><b>info</b><br>Test class: testDD.SeleniumOneFactory<br>Parameters: aaa, 1111</td>
+<td><div><pre>java.lang.AssertionError: expected [okooooo] but found []
+	at testDD.SeleniumOneFactory.info(SeleniumOneFactory.java:42)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1520104054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1520104054'><pre>java.lang.AssertionError: expected [okooooo] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at testDD.SeleniumOneFactory.info(SeleniumOneFactory.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>testDD.SeleniumOneFactory@5b275dab</td></tr>
+<tr>
+<td title='testDD.SeleniumOneFactory.info()'><b>info</b><br>Test class: testDD.SeleniumOneFactory<br>Parameters: bbb, 2222</td>
+<td><div><pre>java.lang.AssertionError: expected [okooooo] but found [By logging in, I agree to the  UPS Technology Agreement. 
+will open in a new window]
+	at testDD.SeleniumOneFactory.info(SeleniumOneFactory.java:42)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1851478522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1851478522'><pre>java.lang.AssertionError: expected [okooooo] but found [By logging in, I agree to the  UPS Technology Agreement. 
+will open in a new window]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at testDD.SeleniumOneFactory.info(SeleniumOneFactory.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>testDD.SeleniumOneFactory@5b275dab</td></tr>
+<tr>
+<td title='testAA.One.soft()'><b>soft</b><br>Test class: testAA.One</td>
+<td><div><pre>java.lang.AssertionError: expected [1001] but found [100]
+	at testAA.One.soft(One.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1435588753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1435588753'><pre>java.lang.AssertionError: expected [1001] but found [100]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at testAA.One.soft(One.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>testAA.One@4b9e13df</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testBB.BBOne.BB1()'><b>BB1</b><br>Test class: testBB.BBOne</td>
+<td></td>
+<td>0</td>
+<td>testBB.BBOne@18be83e4</td></tr>
+<tr>
+<td title='testBB.BBOne.BB2()'><b>BB2</b><br>Test class: testBB.BBOne</td>
+<td></td>
+<td>0</td>
+<td>testBB.BBOne@18be83e4</td></tr>
+<tr>
+<td title='testBB.BBOne.BB3()'><b>BB3</b><br>Test class: testBB.BBOne</td>
+<td></td>
+<td>0</td>
+<td>testBB.BBOne@18be83e4</td></tr>
+<tr>
+<td title='testBB.BBOne.BB4()'><b>BB4</b><br>Test class: testBB.BBOne</td>
+<td></td>
+<td>0</td>
+<td>testBB.BBOne@18be83e4</td></tr>
+<tr>
+<td title='testCC.CCOne.CC1()'><b>CC1</b><br>Test class: testCC.CCOne</td>
+<td></td>
+<td>0</td>
+<td>testCC.CCOne@475530b9</td></tr>
+<tr>
+<td title='testCC.CCOne.CC2()'><b>CC2</b><br>Test class: testCC.CCOne</td>
+<td></td>
+<td>0</td>
+<td>testCC.CCOne@475530b9</td></tr>
+<tr>
+<td title='testCC.CCOne.CC3()'><b>CC3</b><br>Test class: testCC.CCOne</td>
+<td></td>
+<td>0</td>
+<td>testCC.CCOne@475530b9</td></tr>
+<tr>
+<td title='testCC.CCOne.CC4()'><b>CC4</b><br>Test class: testCC.CCOne</td>
+<td></td>
+<td>0</td>
+<td>testCC.CCOne@475530b9</td></tr>
+<tr>
+<td title='testEE.EEOne.ee()'><b>ee</b><br>Test class: testEE.EEOne</td>
+<td></td>
+<td>0</td>
+<td>testEE.EEOne@cb5822</td></tr>
+<tr>
+<td title='testEE.EEE.eeeeee()'><b>eeeeee</b><br>Test class: testEE.EEE</td>
+<td></td>
+<td>0</td>
+<td>testEE.EEE@61832929</td></tr>
+<tr>
+<td title='testFF.FFF.ff()'><b>ff</b><br>Test class: testFF.FFF</td>
+<td></td>
+<td>0</td>
+<td>testFF.FFF@1d057a39</td></tr>
+<tr>
+<td title='testGG.GGG.gg()'><b>gg</b><br>Test class: testGG.GGG</td>
+<td></td>
+<td>0</td>
+<td>testGG.GGG@1593948d</td></tr>
+<tr>
+<td title='testAA.Three.m()'><b>m</b><br>Test class: testAA.Three</td>
+<td></td>
+<td>0</td>
+<td>testAA.Three@26be92ad</td></tr>
+<tr>
+<td title='testAA.Three.n()'><b>n</b><br>Test class: testAA.Three</td>
+<td></td>
+<td>0</td>
+<td>testAA.Three@26be92ad</td></tr>
+<tr>
+<td title='testAA.Three.o()'><b>o</b><br>Test class: testAA.Three</td>
+<td></td>
+<td>0</td>
+<td>testAA.Three@26be92ad</td></tr>
+<tr>
+<td title='testAA.Three.p()'><b>p</b><br>Test class: testAA.Three</td>
+<td></td>
+<td>0</td>
+<td>testAA.Three@26be92ad</td></tr>
+<tr>
+<td title='testAA.Two.v()'><b>v</b><br>Test class: testAA.Two</td>
+<td></td>
+<td>0</td>
+<td>testAA.Two@2b98378d</td></tr>
+<tr>
+<td title='testAA.Two.w()'><b>w</b><br>Test class: testAA.Two</td>
+<td></td>
+<td>0</td>
+<td>testAA.Two@2b98378d</td></tr>
+<tr>
+<td title='testAA.Two.x()'><b>x</b><br>Test class: testAA.Two</td>
+<td></td>
+<td>0</td>
+<td>testAA.Two@2b98378d</td></tr>
+<tr>
+<td title='testAA.Two.y()'><b>y</b><br>Test class: testAA.Two</td>
+<td></td>
+<td>0</td>
+<td>testAA.Two@2b98378d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDD.SeleniumOne.info()'><b>info</b><br>Test class: testDD.SeleniumOne<br>Parameters: aaa, 1111</td>
+<td></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+<tr>
+<td title='testDD.SeleniumOne.info()'><b>info</b><br>Test class: testDD.SeleniumOne<br>Parameters: bbb, 2222</td>
+<td></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+<tr>
+<td title='testDD.SeleniumOne.photoforme()'><b>photoforme</b><br>Test class: testDD.SeleniumOne</td>
+<td><div><pre>org.testng.TestNGException: 
+Method photoforme requires 1 parameters but 0 were supplied in the @Test annotation.
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262603862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262603862'><pre>org.testng.TestNGException: 
+Method photoforme requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>testDD.SeleniumOne@14acaea5</td></tr>
+<tr>
+<td title='testDD.SeleniumOneFactory.photoforme()'><b>photoforme</b><br>Test class: testDD.SeleniumOneFactory</td>
+<td><div><pre>org.testng.TestNGException: 
+Method photoforme requires 1 parameters but 0 were supplied in the @Test annotation.
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1015818865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1015818865'><pre>org.testng.TestNGException: 
+Method photoforme requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>testDD.SeleniumOneFactory@5b275dab</td></tr>
+</table><p>
+</body>
+</html>

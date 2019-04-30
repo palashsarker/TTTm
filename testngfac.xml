@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteOne" parallel="tests" thread-count="6">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testCC.CCOne"/>
+      <class name="testGG.GGG"/>
+      <class name="testDD.SeleniumOne"/>
+      <class name="testGG.Fac"/>
+      <class name="testDD.SeleniumOneFactory"/>
+      <class name="testEE.EEOne"/>
+      <class name="testFF.FFF"/>
+      <class name="testAA.One"/>
+      <class name="testAA.Two"/>
+      <class name="testBB.BBOne"/>
+      <class name="testAA.Three"/>
+      <class name="testEE.EEE"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
